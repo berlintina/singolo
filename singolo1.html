@@ -1,0 +1,132 @@
+    </!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Домашнее задание: Singolo. Part 1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet" type='text/css'>
+        <link rel="stylesheet" href="singolo1.css">
+    </head>
+    <body>
+    <header>
+
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="#" title="Singolo*"><h1>SINGOLO<span>*</span></h1></a>
+            </div>    
+            <nav>
+                <a href="#" title="Home" class="active">Home</a>
+                <a href="#" title="Services">Services</a>
+                <a href="#" title="Services">Portfolio</a>
+                <a href="#" title="About">About</a>
+                <a href="#" title="Contact">Contact</a>
+            </nav>
+    </div>
+    </header>
+        <main>
+            <section id="slider">
+
+                <div class="container-fluid">
+                    <div class="display-container">
+                        <div class="slide"><img class="mySlides" src="assets/iPhone_Horizontal_new2.png"></div>
+                        <div class="slide"><img class="mySlides" src="assets/iPhone_Horizontal_new.png"></div>
+                        <div class="btn_left" onclick="plusDivs(-1)"><img src="assets/chev_left.png"></div>
+                        <div class="btn_right" onclick="plusDivs(1)"><img src="assets/chev_right.png"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="service">
+                <div class="clear"></div>
+                <div class="container-fluid">
+
+                    <div class="text_block">
+                        <h2>Our Services</h2>
+                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor<br /> ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                    </div>
+
+                   
+                    <div class="parent">
+                        <div class="child child_1">
+                            <div class="child_inner_img">
+                                <img src="assets/pen.svg" alt="Custom Design">
+                            </div>
+                            <div class="child_inner">
+                                <p>Custom Design</p>
+                                Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.
+                            </div>
+                        </div>
+                        <div class="child child_2">
+                            <div class="child_inner_img">
+                                <img src="assets/bulb.svg" alt="Inovative Ideas">
+                            </div>
+                            <div class="child_inner">
+                                <p>Inovative Ideas</p>
+                                Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.
+                            </div>
+                        </div>
+                        <div class="child child_3">
+                            <div class="child_inner_img">
+                                <img src="assets/heart.svg" alt="Love Is The Answer">
+                            </div>
+                            <div class="child_inner">
+                                <p>Love Is The Answer</p>
+                                Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.
+                            </div>
+                        </div>
+                    
+                </div>
+                <div class="parent">
+                        <div class="child child_1">
+                            <div class="child_inner_img">
+                                <img src="assets/phone.svg" alt="Responsive Layout">
+                            </div>
+                            <div class="child_inner">
+                                <p>Responsive Layout</p>
+                                Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.
+                            </div>
+                        </div>
+                        <div class="child child_2">
+                            <div class="child_inner_img">
+                                <img src="assets/bubble.svg" alt="24 / 7 Support">
+                            </div>
+                            <div class="child_inner">
+                                <p>24 / 7 Support</p>
+                                Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .
+                            </div>
+                        </div>
+                        <div class="child child_3">
+                            <div class="child_inner_img">
+                                <img src="assets/star.svg" alt="Feel Like A Star">
+                            </div>
+                            <div class="child_inner">
+                                <p>Feel Like A Star</p>
+                                Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.
+                            </div>
+                        </div>
+                    
+                </div>
+                </div>
+            </section>
+        </main>
+    <footer></footer>
+    <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+    </body>
+    </html>
